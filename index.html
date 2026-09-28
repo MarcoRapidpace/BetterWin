@@ -164,6 +164,8 @@
         .node.start { background: #0b0b0b; border: 1px solid rgba(255,255,255,0.25); }
         .node.email { background: rgba(223,190,94,0.07); border: 1px solid rgba(223,190,94,0.55); transition: all .15s ease; }
         .node.email:hover { background: rgba(223,190,94,0.16); border-color: #DFBE5E; transform: translateY(-1px); }
+        .node.email.optional { border-style: dashed; background: rgba(223,190,94,0.03); }
+        .node .when.opt { background: transparent; color: #DFBE5E; border: 1px dashed rgba(223,190,94,0.7); }
         .node.check { background: transparent; border: 1px dashed rgba(170,140,255,0.7); color: #cbbcff; font-size: 12px; font-weight: 600; max-width: 220px; }
         .node.end { background: transparent; border: 1px dashed rgba(255,110,110,0.6); color: #ff9c9c; font-size: 11px; font-weight: 600; max-width: 170px; padding: 6px 10px; }
         .node .pills { display: flex; gap: 6px; justify-content: center; margin-top: 6px; }
@@ -244,9 +246,19 @@
                         <div class="wire"><span>Wait 2 days</span></div>
                         <div class="node check">Deposited yet?</div>
                         <div class="wire"><span>No</span></div>
-                        <a class="node email" href="reg-no-deposit-day3.html"><span class="when">Email 3 · Day 3</span><span class="what">Final Notice</span><span class="hook">Last nudge on the 500% package</span></a>
+                        <a class="node email" href="reg-no-deposit-day3-how-to-deposit.html"><span class="when">Email 2b · Day 3</span><span class="what">How to Deposit with Crypto</span><span class="hook">Coins accepted, $10 minimum, speed + Buy Crypto</span></a>
+                        <div class="wire"><span>Wait 2 days</span></div>
+                        <div class="node check">Deposited yet?</div>
+                        <div class="wire"><span>No</span></div>
+                        <a class="node email" href="reg-no-deposit-day5-game-spotlight.html"><span class="when">Email 2c · Day 5</span><span class="what">Game Spotlight</span><span class="hook">Top games (newsletter tiles) + first-deposit offer</span></a>
+                        <div class="wire"><span>Wait 2 days</span></div>
+                        <div class="node check">Deposited yet?</div>
+                        <div class="wire"><span>No</span></div>
+                        <a class="node email" href="reg-no-deposit-day7-last-reminder.html"><span class="when">Email 3 · Day 7</span><span class="what">Our Last Reminder</span><span class="hook">No fake deadline · hands off to the newsletter</span></a>
                         <div class="wire"></div>
-                        <div class="node end">End of sequence</div>
+                        <div class="node end">End · player moves to The BetterWin Weekly</div>
+                        <div class="wire"><span>Optional · separate trigger</span></div>
+                        <a class="node email optional" href="deposit-abandoned-1h.html"><span class="when opt">Email 3b · ~1h after cashier exit</span><span class="what">Finish Your First Deposit</span><span class="hook">Only if the platform sends a "cashier abandoned" event</span></a>
                         <div class="jump">↗ A “Yes” at any check moves the player onto the deposit track</div>
                     </div>
                     <div class="branch">
@@ -314,8 +326,11 @@
                     <div class="template-desc">Sent immediately on registration to players who haven't deposited yet. Combined welcome greeting and 4-tier bonus breakdown.</div>
                 </div>
             </li>
-            <li class="template-item"><a href="reg-no-deposit-day1.html" class="template-link">2. Registered, No Deposit — Day 1 Reminder<div class="template-desc">Sent 24h after signup if no deposit has been made yet. Reinforces the 500% package and shows how to buy crypto in the Wallet.</div></a></li>
-            <li class="template-item"><a href="reg-no-deposit-day3.html" class="template-link">3. Registered, No Deposit — Final Notice<div class="template-desc">Sent day 3 for still-undeposited players. Last nudge before the welcome sequence tapers off.</div></a></li>
+            <li class="template-item"><a href="reg-no-deposit-day1.html" class="template-link">2. Registered, No Deposit — Day 1 Reminder<div class="template-desc">Sent 24h after signup if no deposit has been made yet. Reinforces the 500% package and the weekly cashback safety net.</div></a></li>
+            <li class="template-item"><a href="reg-no-deposit-day3-how-to-deposit.html" class="template-link">2b. How to Deposit with Crypto — Day 3<div class="template-desc">Two paths: send crypto you already hold, or buy it with card, Apple Pay or Google Pay in the Wallet. Coins accepted, $10 minimum, typical speed.</div></a></li>
+            <li class="template-item"><a href="reg-no-deposit-day5-game-spotlight.html" class="template-link">2c. Game Spotlight — Day 5<div class="template-desc">Top games using the newsletter tiles, plus the first-deposit offer. Swap the tiles to match each week's newsletter.</div></a></li>
+            <li class="template-item"><a href="reg-no-deposit-day7-last-reminder.html" class="template-link">3. Our Last Reminder — Day 7<div class="template-desc">Moved from Day 3. Honest last nudge: the package has no deadline, so no fake urgency. Hands the player off to the newsletter.</div></a></li>
+            <li class="template-item"><a href="deposit-abandoned-1h.html" class="template-link">3b. Cashier Abandoned — ~1h (optional)<div class="template-desc">"Finish your deposit" with quick fixes (buy crypto, declined cards, networks, $10 minimum). Only use if the platform exposes a cashier-abandoned event.</div></a></li>
         </ul>
 
         <div class="section-title">💰 Deposit-Tier Progression</div>
