@@ -10,6 +10,7 @@
         body {
             margin: 0 !important;
             padding: 0 !important;
+            background-color: #0b0b0b !important;
             background: radial-gradient(circle at top, #2b2b2b 0%, #0b0b0b 100%) !important;
             font-family: 'Poppins', Arial, sans-serif !important;
             color: #ffffff !important;
@@ -137,16 +138,19 @@
             .mobile-btn { display: block !important; width: 100% !important; text-align: center !important; box-sizing: border-box !important; padding: 18px 20px !important; }
             .nav-wrap { padding: 16px 10px 12px !important; }
             .nav-cell { padding: 0 2px !important; }
-            .nav-btn { font-size: 10.5px !important; padding: 7px 2px !important; }
-            .nav-btn img { display: none !important; }
+            .nav-btn { font-size: 10.5px !important; padding: 7px 2px 6px !important; line-height: 1.2 !important; }
+            .nav-btn img { display: block !important; width: 18px !important; height: 18px !important; margin: 0 auto 3px !important; }
         }
+        .btn-wrap { margin: 0 auto; }
+        @media only screen and (max-width: 599px) { .btn-wrap { width: 100% !important; } }
     </style>
     <!--[if mso]><xml> <w:WordDocument xmlns:w="urn:schemas-microsoft-com:office:word"> <w:DontUseAdvancedTypographyReadingMail/> </w:WordDocument> </xml><![endif]-->
 </head>
 
-<body>
+<body bgcolor="#0b0b0b">
     <div style="display:none;max-height:0px;overflow:hidden;opacity:0;font-size:1px;line-height:1px;color:#0b0b0b;">Your 500% Welcome Package is waiting: 200% up to $500 + 50 free spins on your first deposit. &nbsp;&zwnj;&nbsp;&zwnj;&nbsp;&zwnj;&nbsp;&zwnj;</div>
-    <table role="presentation" cellpadding="0" cellspacing="0" border="0" width="100%" style="max-width: 600px; margin: 20px auto; background: linear-gradient(180deg, #1a1a1a 0%, #121212 100%); border-radius: 16px; overflow: hidden; box-shadow: 0 0 25px rgba(223, 190, 94, 0.25); border: 1px solid rgba(223, 190, 94, 0.15);">
+    <!--[if mso]><table role="presentation" width="600" align="center" cellpadding="0" cellspacing="0" border="0"><tr><td><![endif]-->
+    <table role="presentation" cellpadding="0" cellspacing="0" border="0" width="100%" bgcolor="#121212" style="max-width: 600px; margin: 20px auto; background-color: #121212; background: linear-gradient(180deg, #1a1a1a 0%, #121212 100%); border-radius: 16px; overflow: hidden; box-shadow: 0 0 25px rgba(223, 190, 94, 0.25); border: 1px solid rgba(223, 190, 94, 0.15);">
         <tbody>
             <!-- HEADER: logo + nav -->
             <tr>
@@ -206,7 +210,7 @@
                 </td>
             </tr>
             <tr>
-                <td class="mobile-pad esd-text" style="padding: 25px 35px 40px; text-align: center;"><a href="https://www.betterwin.com/promotion/500-welcome-bonus-200-free-spins" class="verify-btn mobile-btn" target="_blank" rel="noopener noreferrer">Claim 1st Deposit Bonus</a>
+                <td class="mobile-pad esd-text" style="padding: 25px 35px 40px; text-align: center;"><table role="presentation" class="btn-wrap" align="center" cellpadding="0" cellspacing="0" border="0" style="margin: 0 auto;"><tr><td align="center" bgcolor="#DFBE5E" style="border-radius: 50px; mso-padding-alt: 15px 40px;"><a data-bp="1" href="https://www.betterwin.com/promotion/500-welcome-bonus-200-free-spins" class="verify-btn mobile-btn" target="_blank" rel="noopener noreferrer">Claim 1st Deposit Bonus</a></td></tr></table>
                     <p style="margin: 20px 0 0; color: #aaa; font-size: 14px; font-style: italic;">*Your welcome profile remains active. Fund your wallet to begin Mission 1.</p>
                 </td>
             </tr>
@@ -254,6 +258,7 @@
             </tr>
         </tbody>
     </table>
+    <!--[if mso]></td></tr></table><![endif]-->
     <div class="reserved-section-urm" style="max-width:600px;margin:auto;">
         <div id="footer-id-reserved" class="esd-text"><span class="replace-footer-class"><b style="display:none;"></b></span></div>
     </div>
