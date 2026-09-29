@@ -1,0 +1,253 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600;700;800&display=swap" rel="stylesheet">
+    <title>Your Free Daily Coins Are Still Here</title>
+    <style>
+        body {
+            margin: 0 !important;
+            padding: 0 !important;
+            background-color: #0b0b0b !important;
+            background: radial-gradient(circle at top, #2b2b2b 0%, #0b0b0b 100%) !important;
+            font-family: 'Poppins', Arial, sans-serif !important;
+            color: #ffffff !important;
+            -webkit-font-smoothing: antialiased;
+            -ms-text-size-adjust: 100%;
+            -webkit-text-size-adjust: 100%;
+        }
+
+        table {
+            border-collapse: collapse !important;
+        }
+
+        img {
+            border: 0 !important;
+            outline: none !important;
+            text-decoration: none !important;
+            -ms-interpolation-mode: bicubic;
+        }
+
+        a img {
+            border: 0 !important;
+        }
+
+        .highlight {
+            color: #DFBE5E !important;
+            font-weight: 600 !important;
+        }
+
+        .cta-line {
+            font-size: 18px !important;
+            font-weight: 600 !important;
+            color: #DFBE5E !important;
+        }
+
+        .verify-btn {
+            display: inline-block !important;
+            padding: 15px 40px !important;
+            background: linear-gradient(180deg, #EED67E 0%, #CFA840 100%) !important;
+            color: #000 !important;
+            text-decoration: none !important;
+            border-radius: 50px !important;
+            font-weight: 700 !important;
+            box-shadow: 0 0 25px rgba(223, 190, 94, 0.6) !important;
+            text-transform: uppercase;
+            letter-spacing: 1px;
+        }
+
+        .verify-btn:hover {
+            background: linear-gradient(180deg, #EED67E 0%, #CFA840 100%) !important;
+            transform: translateY(-2px);
+        }
+
+        .section-card {
+            background: rgba(223, 190, 94, 0.05);
+            border: 1px solid rgba(223, 190, 94, 0.1);
+            border-radius: 12px;
+        }
+
+        @media only screen and (max-width: 599px) {
+            .mobile-stack img {
+                width: 100% !important;
+                height: auto !important;
+            }
+
+            .mobile-full {
+                width: 100% !important;
+            }
+
+            .mobile-pad {
+                padding: 20px 15px !important;
+            }
+
+            .mobile-h1 {
+                font-size: 22px !important;
+                line-height: 1.3 !important;
+            }
+
+            .mobile-btn {
+                width: 100% !important;
+                text-align: center !important;
+                box-sizing: border-box !important;
+                padding: 18px 20px !important;
+            }
+
+            .mobile-text-left {
+                text-align: center !important;
+            }
+
+            .hide-mobile {
+                display: none !important;
+            }
+        }
+        /* ===== BetterWin brand system (mirrors newsletter-weekly.html) ===== */
+        .verify-btn {
+            display: inline-block !important;
+            padding: 15px 40px !important;
+            background: linear-gradient(180deg, #EED67E 0%, #CFA840 100%) !important;
+            color: #000 !important;
+            text-decoration: none !important;
+            border-radius: 50px !important;
+            font-weight: 600 !important;
+            font-size: 16px !important;
+            text-transform: none !important;
+            letter-spacing: normal !important;
+            box-shadow: 0 0 25px rgba(223, 190, 94, 0.6) !important;
+        }
+        .text-link { color: #DFBE5E !important; text-decoration: none !important; font-weight: 600; font-size: 14px; }
+        .nav-btn {
+            display: block;
+            background: #161616;
+            border: 1px solid rgba(223, 190, 94, 0.28);
+            border-radius: 8px;
+            padding: 5px 6px;
+            text-decoration: none;
+            color: #ffffff;
+            font-size: 11px;
+            font-weight: 700;
+            white-space: nowrap;
+            text-align: center;
+        }
+        .nav-btn img { width: 16px; height: 16px; display: inline-block; vertical-align: middle; margin-right: 4px; }
+        @media only screen and (max-width: 599px) {
+            .mobile-pad { padding-left: 16px !important; padding-right: 16px !important; }
+            .mobile-h1 { font-size: 25px !important; line-height: 1.25 !important; }
+            .mobile-btn { display: block !important; width: 100% !important; text-align: center !important; box-sizing: border-box !important; padding: 18px 20px !important; }
+            .nav-wrap { padding: 16px 10px 12px !important; }
+            .nav-cell { padding: 0 2px !important; }
+            .nav-btn { font-size: 10.5px !important; padding: 7px 2px 6px !important; line-height: 1.2 !important; }
+            .nav-btn img { display: block !important; width: 18px !important; height: 18px !important; margin: 0 auto 3px !important; }
+        }
+        .btn-wrap { margin: 0 auto; }
+        @media only screen and (max-width: 599px) { .btn-wrap { width: 100% !important; } }
+        .section-card { border-collapse: separate !important; }
+        @media only screen and (max-width: 360px) { .mobile-h1 { font-size: 21px !important; } }
+        .rg-badges img { max-width: 100%; }
+        @media only screen and (max-width: 599px) {
+            .rg-badges td { display: inline-block !important; padding: 3px !important; vertical-align: middle; }
+            .rg-badges img { max-height: 30px !important; }
+        }
+        .game-img { width: 100%; height: auto; display: block; border-radius: 10px; border: 1px solid rgba(223, 190, 94, 0.25); }
+        .game-name { margin: 8px 0 1px; font-size: 14px; font-weight: 600; color: #ffffff; line-height: 1.3; }
+        .game-prov { margin: 0; font-size: 11px; color: #888888; text-transform: uppercase; letter-spacing: 0.6px; }
+        .pkg-best { display: inline-block; font-size: 10px; font-weight: 800; letter-spacing: 1px; color: #0b0b0b; background: #DFBE5E; border-radius: 20px; padding: 2px 8px; }
+        @media only screen and (max-width: 599px) {
+            .g3 { padding-left: 3px !important; padding-right: 3px !important; }
+            .g3 .game-name { font-size: 12px !important; }
+            .g3 .game-prov { font-size: 9px !important; letter-spacing: 0.3px !important; }
+            .pkg td { padding-left: 8px !important; padding-right: 8px !important; font-size: 13px !important; }
+            .lvl td { padding-left: 6px !important; padding-right: 6px !important; font-size: 12px !important; }
+        }
+    </style>
+    <!--[if mso]><xml> <w:WordDocument xmlns:w="urn:schemas-microsoft-com:office:word"> <w:DontUseAdvancedTypographyReadingMail/> </w:WordDocument> </xml><![endif]-->
+</head>
+
+<body bgcolor="#0b0b0b">
+    <div style="display:none;max-height:0px;overflow:hidden;opacity:0;font-size:1px;line-height:1px;color:#0b0b0b;">It has been a while. Your free daily coins are still there every day you log in. &nbsp;&zwnj;&nbsp;&zwnj;&nbsp;&zwnj;&nbsp;&zwnj;</div>
+    <!--[if mso]><table role="presentation" width="600" align="center" cellpadding="0" cellspacing="0" border="0"><tr><td><![endif]-->
+    <table role="presentation" cellpadding="0" cellspacing="0" border="0" width="100%" bgcolor="#121212" style="border-collapse: separate !important; max-width: 600px; margin: 20px auto; background-color: #121212; background: linear-gradient(180deg, #1a1a1a 0%, #121212 100%); border-radius: 16px; overflow: hidden; box-shadow: 0 0 25px rgba(223, 190, 94, 0.25); border: 1px solid rgba(223, 190, 94, 0.15);">
+        <tbody>
+            <!-- HEADER: logo + nav -->
+            <tr>
+                <td class="nav-wrap" align="center" style="padding: 18px 20px 12px; background: #0f0f0f; border-bottom: 1px solid rgba(223, 190, 94, 0.2);">
+                    <a href="https://betterwin.us/?utm_source=rapidpace&amp;utm_medium=email&amp;utm_campaign=us-lapsed-30d" target="_blank" rel="noopener noreferrer"><img src="https://marcorapidpace.github.io/BetterWin/img/betterwin-us-logo.png" alt="BetterWin US" width="190" style="width: 190px; max-width: 55%; height: auto; display: block; margin: 0 auto 12px; border: 0; color: #DFBE5E; font-size: 20px; font-weight: 700;"></a>
+                    <table role="presentation" cellpadding="0" cellspacing="0" border="0" width="100%"><tbody><tr><td class="nav-cell" width="25%" style="padding: 0 4px;"><a data-inl="1" class="nav-btn" style="display: block; background-color: #161616; border: 1px solid #4e452a; border-radius: 8px; padding: 7px 4px; text-decoration: none; color: #ffffff; font-size: 11px; font-weight: 700; white-space: nowrap; text-align: center; line-height: 1.3; font-family: 'Poppins', Arial, sans-serif;" href="https://betterwin.us/?utm_source=rapidpace&amp;utm_medium=email&amp;utm_campaign=us-lapsed-30d" target="_blank" rel="noopener noreferrer">Lobby</a></td><td class="nav-cell" width="25%" style="padding: 0 4px;"><a data-inl="1" class="nav-btn" style="display: block; background-color: #161616; border: 1px solid #4e452a; border-radius: 8px; padding: 7px 4px; text-decoration: none; color: #ffffff; font-size: 11px; font-weight: 700; white-space: nowrap; text-align: center; line-height: 1.3; font-family: 'Poppins', Arial, sans-serif;" href="https://betterwin.us/promotions?utm_source=rapidpace&amp;utm_medium=email&amp;utm_campaign=us-lapsed-30d" target="_blank" rel="noopener noreferrer">Promotions</a></td><td class="nav-cell" width="25%" style="padding: 0 4px;"><a data-inl="1" class="nav-btn" style="display: block; background-color: #161616; border: 1px solid #4e452a; border-radius: 8px; padding: 7px 4px; text-decoration: none; color: #ffffff; font-size: 11px; font-weight: 700; white-space: nowrap; text-align: center; line-height: 1.3; font-family: 'Poppins', Arial, sans-serif;" href="https://betterwin.us/vip?utm_source=rapidpace&amp;utm_medium=email&amp;utm_campaign=us-lapsed-30d" target="_blank" rel="noopener noreferrer">VIP</a></td><td class="nav-cell" width="25%" style="padding: 0 4px;"><a data-inl="1" class="nav-btn" style="display: block; background-color: #161616; border: 1px solid #4e452a; border-radius: 8px; padding: 7px 4px; text-decoration: none; color: #ffffff; font-size: 11px; font-weight: 700; white-space: nowrap; text-align: center; line-height: 1.3; font-family: 'Poppins', Arial, sans-serif;" href="https://betterwin.us/affiliate?utm_source=rapidpace&amp;utm_medium=email&amp;utm_campaign=us-lapsed-30d" target="_blank" rel="noopener noreferrer">Refer &amp; Earn</a></td></tr></tbody></table>
+                </td>
+            </tr>
+            <tr>
+                <td class="mobile-pad esd-text" style="background: radial-gradient(ellipse at top, rgba(223, 190, 94, 0.22) 0%, rgba(223, 190, 94, 0) 70%); padding: 34px 35px 10px; text-align: center;">
+                    <p style="margin: 0 0 10px; font-size: 12px; color: #DFBE5E; letter-spacing: 3px; text-transform: uppercase; font-weight: 700;">It's Been a While</p>
+                    <h1 class="mobile-h1" style="margin: 0 0 18px; font-size: 30px; font-weight: 800; line-height: 1.2; color: #ffffff;">Your Free Daily Coins<br><span style="color: #DFBE5E; text-shadow: 0 0 12px rgba(223, 190, 94, 0.5);">Are Still Here</span></h1>
+                    <p style="font-size: 16px; color: #cccccc; line-height: 1.7; margin: 0 0 16px; text-align: left;">It's been a while since your last visit. Your free daily coins are still there every day you log in, and here's what players are enjoying right now.</p>
+                </td>
+            </tr>
+            <tr>
+                <td class="mobile-pad" style="padding: 22px 25px 0;">
+                    <table role="presentation" cellpadding="0" cellspacing="0" border="0" width="100%" bgcolor="#1a1810" style="border-collapse: separate !important; background: linear-gradient(180deg, rgba(223, 190, 94, 0.14) 0%, rgba(223, 190, 94, 0.03) 100%); border: 1px solid rgba(223, 190, 94, 0.3); border-radius: 14px;"><tbody><tr>
+                        <td style="padding: 20px 20px 18px; text-align: left;" class="esd-text">
+                            <p style="margin: 0 0 4px; font-size: 12px; color: #DFBE5E; text-transform: uppercase; letter-spacing: 1.5px; font-weight: 700;">Your account at a glance</p>
+                            <p style="margin: 0 0 10px; font-size: 20px; color: #ffffff; font-weight: 700; line-height: 1.3;">Still Here, Still Free</p>
+                            <table role="presentation" cellpadding="0" cellspacing="0" border="0" width="100%"><tbody><tr><td width="28" valign="top" style="padding: 0 0 10px; font-size: 14px; font-weight: 800; color: #DFBE5E; line-height: 1.5;">1</td><td style="padding: 0 0 10px; font-size: 14px; color: #ffffff; line-height: 1.5;">Your <strong>redeemable Sweeps Coins don't expire</strong>; any balance is still in your account.</td></tr><tr><td width="28" valign="top" style="padding: 0 0 10px; font-size: 14px; font-weight: 800; color: #DFBE5E; line-height: 1.5;">2</td><td style="padding: 0 0 10px; font-size: 14px; color: #ffffff; line-height: 1.5;"><strong>Free daily coins</strong> and a Daily Spin, every day you log in.</td></tr><tr><td width="28" valign="top" style="padding: 0 0 0; font-size: 14px; font-weight: 800; color: #DFBE5E; line-height: 1.5;">3</td><td style="padding: 0 0 0; font-size: 14px; color: #ffffff; line-height: 1.5;"><strong>Weekly VIP Coinback</strong> every Wednesday as you play.</td></tr></tbody></table>
+                        </td>
+                    </tr></tbody></table>
+                </td>
+            </tr>
+            <tr>
+                <td class="mobile-pad" style="padding: 22px 35px 0;">
+                    <p style="margin: 0 0 4px; font-size: 12px; color: #DFBE5E; text-transform: uppercase; letter-spacing: 1.5px; font-weight: 700;">🔥 Top picks</p>
+                    <p style="margin: 0 0 14px; font-size: 20px; color: #ffffff; font-weight: 700;">What's Popular Now</p>
+                    <table role="presentation" cellpadding="0" cellspacing="0" border="0" width="100%"><tbody><tr><td class="g3" width="33%" valign="top" style="padding: 0 5px 12px 0; text-align: center;"><a href="https://betterwin.us/?utm_source=rapidpace&amp;utm_medium=email&amp;utm_campaign=us-lapsed-30d" target="_blank" rel="noopener noreferrer" style="text-decoration: none;"><img class="game-img" src="https://betterwin-sweeps-prod-active-storage.s3.us-east-1.amazonaws.com/sweeps/assets/casino/games/27367.png" alt="Chicken Run" width="170" style="width: 100%; height: auto; display: block; border-radius: 10px; border: 1px solid rgba(223, 190, 94, 0.25); color: #DFBE5E; font-size: 12px;"><p class="game-name">Chicken Run</p><p class="game-prov">Iconic21</p></a></td><td class="g3" width="33%" valign="top" style="padding: 0 3px 12px 3px; text-align: center;"><a href="https://betterwin.us/?utm_source=rapidpace&amp;utm_medium=email&amp;utm_campaign=us-lapsed-30d" target="_blank" rel="noopener noreferrer" style="text-decoration: none;"><img class="game-img" src="https://betterwin-sweeps-prod-active-storage.s3.us-east-1.amazonaws.com/sweeps/assets/casino/games/28094.png" alt="Mines" width="170" style="width: 100%; height: auto; display: block; border-radius: 10px; border: 1px solid rgba(223, 190, 94, 0.25); color: #DFBE5E; font-size: 12px;"><p class="game-name">Mines</p><p class="game-prov">Iconic21</p></a></td><td class="g3" width="33%" valign="top" style="padding: 0 0 12px 5px; text-align: center;"><a href="https://betterwin.us/?utm_source=rapidpace&amp;utm_medium=email&amp;utm_campaign=us-lapsed-30d" target="_blank" rel="noopener noreferrer" style="text-decoration: none;"><img class="game-img" src="https://betterwin-sweeps-prod-active-storage.s3.us-east-1.amazonaws.com/sweeps/assets/casino/games/19387.png" alt="Diamond Mines" width="170" style="width: 100%; height: auto; display: block; border-radius: 10px; border: 1px solid rgba(223, 190, 94, 0.25); color: #DFBE5E; font-size: 12px;"><p class="game-name">Diamond Mines</p><p class="game-prov">Betsoft</p></a></td></tr></tbody></table>
+                    <!-- CRM note: game tiles link to the lobby. Swap titles to match the current Top 10. -->
+                </td>
+            </tr>
+            <!-- CRM note: optional small free SC gift for this segment. RG-gated, never tied to losses, never to self-excluded or cool-off accounts. -->
+            <tr>
+                <td class="mobile-pad esd-text" style="padding: 26px 35px 34px; text-align: center;"><table role="presentation" class="btn-wrap" align="center" cellpadding="0" cellspacing="0" border="0" style="margin: 0 auto;"><tr><td align="center" bgcolor="#DFBE5E" style="border-radius: 50px; mso-padding-alt: 15px 40px;"><a data-bp="1" data-inl="1" href="https://betterwin.us/?utm_source=rapidpace&amp;utm_medium=email&amp;utm_campaign=us-lapsed-30d" class="verify-btn mobile-btn" target="_blank" rel="noopener noreferrer" style="display: inline-block; padding: 15px 40px; background-color: #DFBE5E; background: linear-gradient(180deg, #EED67E 0%, #CFA840 100%); color: #000000; text-decoration: none; border-radius: 50px; font-weight: 600; font-size: 16px; line-height: 1.3; font-family: 'Poppins', Arial, sans-serif;">Back to the Lobby</a></td></tr></table>
+                </td>
+            </tr>
+            <tr>
+                <td class="mobile-pad esd-text" style="padding: 0 35px 25px; text-align: center;">
+                    <p style="margin: 0 0 12px; color: #DFBE5E; font-size: 18px; font-style: italic;"><strong>Always Free to Play.</strong></p>
+                    <p style="margin: 0 0 10px; font-size: 13px; color: #aaaaaa; line-height: 1.6;">Purchases are for entertainment. Set purchase limits, session reminders or take a break any time from Responsible Gaming in your account. <a href="https://betterwin.us/responsible-gambling?utm_source=rapidpace&amp;utm_medium=email&amp;utm_campaign=us-lapsed-30d" target="_blank" rel="noopener noreferrer" style="color: #DFBE5E; text-decoration: none; font-weight: 600;">Responsible gaming tools →</a></p>
+                    <p style="margin: 0; font-size: 14px; color: #cccccc;">Need help? <a href="https://betterwin.us/ticket?utm_source=rapidpace&amp;utm_medium=email&amp;utm_campaign=us-lapsed-30d" target="_blank" rel="noopener noreferrer" style="color: #DFBE5E; text-decoration: none; font-weight: 600;">Live chat</a> or <a href="mailto:support@betterwin.us" style="color: #DFBE5E; text-decoration: none; font-weight: 600;">support@betterwin.us</a></p>
+                </td>
+            </tr>
+            <tr>
+                <td style="background: #0f0f0f; border-top: 1px solid #222; padding: 22px 20px; font-size: 12px; color: #999999; text-align: left; line-height: 1.6;" class="esd-text">
+                    <p style="margin: 0 0 8px;"><strong>Key Terms:</strong></p>
+                    <ul style="margin: 0 0 12px; padding-left: 18px;">
+                        <li style="margin: 4px 0;">Daily login coins and Daily Spin rewards are shown in your account and may change. A mail-in request earns the same Sweeps Coins as the daily login allocation; see the Sweepstakes Rules.</li>
+                        <li style="margin: 4px 0;">Sweeps Coins (SC) are always free and can never be purchased. Free SC must be played through once (1x) before they can be redeemed. 1 SC = $1.00 prize value. Gold Coins (GC) are for entertainment only and have no prize value.</li>
+                    </ul>
+                    <p style="margin: 0;"><strong>NO PURCHASE NECESSARY. VOID WHERE PROHIBITED.</strong> A purchase does not increase your chances of winning. Open to legal residents of eligible US states who are 21 or older and physically located in an eligible state. Not available in CA, CT, ID, IN, IA, LA, ME, MI, MT, NV, NJ, NY, OK, TN and WA. Sweeps Coins have no cash value until redeemed under the official rules. Free Sweeps Coins are available every day you log in and by mail-in request. Sponsor: BETTERWIN INC. See the <a href="https://betterwin.us/sweepsrules?utm_source=rapidpace&amp;utm_medium=email&amp;utm_campaign=us-lapsed-30d" target="_blank" rel="noopener noreferrer" style="color: #DFBE5E; text-decoration: none; font-weight: 600;">Sweepstakes Rules</a> for eligibility, free entry methods, odds, prize redemption and restrictions.</p>
+                </td>
+            </tr>
+            <tr>
+                <td style="background: #0f0f0f; text-align: center; padding: 15px 20px 25px; font-size: 12px; color: #888888; border-top: 1px solid #222;" class="esd-text">
+                    <p style="margin: 0 0 8px; font-size: 11px; color: #DFBE5E; text-transform: uppercase; letter-spacing: 1.5px; font-weight: 700;">Follow BetterWin US</p>
+                    <table role="presentation" cellpadding="0" cellspacing="0" border="0" style="margin: 0 auto 6px;"><tbody><tr><td style="padding: 0 6px;"><a href="https://www.facebook.com/BetterWin.US" target="_blank" rel="noopener noreferrer" style="text-decoration: none;"><img src="https://egxor.stripocdnplugin.email/content/6d3dac714f0b4ccebfa1032816a53a66/lib/pluginId_6d3dac714f0b4ccebfa1032816a53a66_email_d29bfd37-1dd3-4e71-ad79-f23e0c87e710/socialfacebook.png" alt="Facebook" width="32" height="32" style="display: block; width: 32px; height: 32px; border: 0; color: #DFBE5E; font-size: 11px;"></a></td></tr></tbody></table>
+                    <p style="margin: 0 0 12px; font-size: 11px; color: #888888;">No-cost Sweeps Coins giveaways are posted on our Facebook page.</p>
+                    <div style="margin: 0 0 8px; line-height: 1.8;" class="esd-text"><a href="https://betterwin.us/sweepsrules?utm_source=rapidpace&amp;utm_medium=email&amp;utm_campaign=us-lapsed-30d" target="_blank" rel="noopener noreferrer" style="color: #dfbe5e; text-decoration: none; white-space: nowrap;">Sweepstakes Rules</a> | <a href="https://betterwin.us/general-terms?utm_source=rapidpace&amp;utm_medium=email&amp;utm_campaign=us-lapsed-30d" target="_blank" rel="noopener noreferrer" style="color: #dfbe5e; text-decoration: none; white-space: nowrap;">Terms</a> | <a href="https://betterwin.us/privacy-policy?utm_source=rapidpace&amp;utm_medium=email&amp;utm_campaign=us-lapsed-30d" target="_blank" rel="noopener noreferrer" style="color: #dfbe5e; text-decoration: none; white-space: nowrap;">Privacy</a> | <a href="https://betterwin.us/responsible-gambling?utm_source=rapidpace&amp;utm_medium=email&amp;utm_campaign=us-lapsed-30d" target="_blank" rel="noopener noreferrer" style="color: #dfbe5e; text-decoration: none; white-space: nowrap;">Responsible Gaming</a> | <a href="https://betterwin.us/faq?utm_source=rapidpace&amp;utm_medium=email&amp;utm_campaign=us-lapsed-30d" target="_blank" rel="noopener noreferrer" style="color: #dfbe5e; text-decoration: none; white-space: nowrap;">Help Center</a> | <a href="mailto:support@betterwin.us?subject=Unsubscribe&amp;body=Please%20unsubscribe%20me%2C%20I%20no%20longer%20want%20to%20receive%20emails%20from%20you%2C%20thanks." style="color: #dfbe5e; text-decoration: none; white-space: nowrap;">Unsubscribe</a></div>
+                    <hr style="border: none; border-top: 1px solid #444; margin: 10px auto; max-width: 560px; height: 1px;">
+                    <p style="text-align: justify; margin: 0 0 10px; font-size: 12px; line-height: 1.5;">BetterWin US is a free-to-play social gaming website intended for amusement purposes only. BetterWin US does not offer real-money gambling. Play is open only to eligible participants who are 21 or older, or the age of majority in their jurisdiction if higher.</p>
+                    <p style="margin: 0 0 10px; font-size: 12px; line-height: 1.5;"><strong style="color: #cccccc;">21+ only. Play responsibly.</strong> Need support? Call or text <a href="tel:18006973738" style="color: #dfbe5e; text-decoration: none; white-space: nowrap;">1-800-MY-RESET</a> or visit <a href="https://1800myreset.org" target="_blank" rel="noopener noreferrer" style="color: #dfbe5e; text-decoration: none;">1800myreset.org</a>.</p>
+                    <hr style="border: none; border-top: 1px solid #444; margin: 10px auto; max-width: 560px; height: 1px;">
+                    <p style="margin: 0; font-size: 12px;">You're receiving this email because you have a BetterWin US account and agreed to receive marketing emails.</p>
+                    <p style="margin: 0; font-size: 12px;">BETTERWIN INC, 10989 N Tongass Hwy, Ketchikan, AK 99901</p>
+                    <p style="margin: 0; font-size: 12px;">© 2026 BetterWin US. All rights reserved.</p>
+                </td>
+            </tr>
+        </tbody>
+    </table>
+    <!--[if mso]></td></tr></table><![endif]-->
+    <div class="reserved-section-urm" style="max-width:600px;margin:auto;">
+        <div id="footer-id-reserved" class="esd-text"><span class="replace-footer-class"><b style="display:none;"></b></span></div>
+    </div>
+    <div class="reserved-section-urm" style="max-width:600px;margin:auto;"></div>
+    <div class="reserved-section-urm" style="max-width:600px;margin:auto;"></div><span class="replace-subscription-class esd-text"></span><span class="replace-subscription-class esd-text"></span><span class="replace-subscription-class esd-text"></span>
+</body>
+
+</html>
