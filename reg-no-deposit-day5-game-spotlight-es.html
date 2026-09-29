@@ -1,0 +1,327 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html lang="es">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600;700;800&display=swap" rel="stylesheet">
+    <title>Los Juegos que Todos Están Jugando Esta Semana - BetterWin</title>
+    <style>
+        body {
+            margin: 0 !important;
+            padding: 0 !important;
+            background-color: #0b0b0b !important;
+            background: radial-gradient(circle at top, #2b2b2b 0%, #0b0b0b 100%) !important;
+            font-family: 'Poppins', Arial, sans-serif !important;
+            color: #ffffff !important;
+            -webkit-font-smoothing: antialiased;
+            -ms-text-size-adjust: 100%;
+            -webkit-text-size-adjust: 100%;
+        }
+
+        table {
+            border-collapse: collapse !important;
+        }
+
+        img {
+            border: 0 !important;
+            outline: none !important;
+            text-decoration: none !important;
+            -ms-interpolation-mode: bicubic;
+        }
+
+        a img {
+            border: 0 !important;
+        }
+
+        .highlight {
+            color: #DFBE5E !important;
+            font-weight: 600 !important;
+        }
+
+        .cta-line {
+            font-size: 18px !important;
+            font-weight: 600 !important;
+            color: #DFBE5E !important;
+        }
+
+        .verify-btn {
+            display: inline-block !important;
+            padding: 15px 40px !important;
+            background: linear-gradient(180deg, #EED67E 0%, #CFA840 100%) !important;
+            color: #000 !important;
+            text-decoration: none !important;
+            border-radius: 50px !important;
+            font-weight: 700 !important;
+            box-shadow: 0 0 25px rgba(223, 190, 94, 0.6) !important;
+            text-transform: uppercase;
+            letter-spacing: 1px;
+        }
+
+        .verify-btn:hover {
+            background: linear-gradient(180deg, #EED67E 0%, #CFA840 100%) !important;
+            transform: translateY(-2px);
+        }
+
+        .section-card {
+            background: rgba(223, 190, 94, 0.05);
+            border: 1px solid rgba(223, 190, 94, 0.1);
+            border-radius: 12px;
+        }
+
+        @media only screen and (max-width: 599px) {
+            .mobile-stack img {
+                width: 100% !important;
+                height: auto !important;
+            }
+
+            .mobile-full {
+                width: 100% !important;
+            }
+
+            .mobile-pad {
+                padding: 20px 15px !important;
+            }
+
+            .mobile-h1 {
+                font-size: 22px !important;
+                line-height: 1.3 !important;
+            }
+
+            .mobile-btn {
+                width: 100% !important;
+                text-align: center !important;
+                box-sizing: border-box !important;
+                padding: 18px 20px !important;
+            }
+
+            .mobile-text-left {
+                text-align: center !important;
+            }
+
+            .hide-mobile {
+                display: none !important;
+            }
+        }
+        /* ===== BetterWin brand system (mirrors newsletter-weekly.html) ===== */
+        .verify-btn {
+            display: inline-block !important;
+            padding: 15px 40px !important;
+            background: linear-gradient(180deg, #EED67E 0%, #CFA840 100%) !important;
+            color: #000 !important;
+            text-decoration: none !important;
+            border-radius: 50px !important;
+            font-weight: 600 !important;
+            font-size: 16px !important;
+            text-transform: none !important;
+            letter-spacing: normal !important;
+            box-shadow: 0 0 25px rgba(223, 190, 94, 0.6) !important;
+        }
+        .text-link { color: #DFBE5E !important; text-decoration: none !important; font-weight: 600; font-size: 14px; }
+        .nav-btn {
+            display: block;
+            background: #161616;
+            border: 1px solid rgba(223, 190, 94, 0.28);
+            border-radius: 8px;
+            padding: 5px 6px;
+            text-decoration: none;
+            color: #ffffff;
+            font-size: 11px;
+            font-weight: 700;
+            white-space: nowrap;
+            text-align: center;
+        }
+        .nav-btn img { width: 16px; height: 16px; display: inline-block; vertical-align: middle; margin-right: 4px; }
+        @media only screen and (max-width: 599px) {
+            .mobile-pad { padding-left: 16px !important; padding-right: 16px !important; }
+            .mobile-h1 { font-size: 25px !important; line-height: 1.25 !important; }
+            .mobile-btn { display: block !important; width: 100% !important; text-align: center !important; box-sizing: border-box !important; padding: 18px 20px !important; }
+            .nav-wrap { padding: 16px 10px 12px !important; }
+            .nav-cell { padding: 0 2px !important; }
+            .nav-btn { font-size: 10.5px !important; padding: 7px 2px 6px !important; line-height: 1.2 !important; }
+            .nav-btn img { display: block !important; width: 18px !important; height: 18px !important; margin: 0 auto 3px !important; }
+        }
+        .sec-kicker {
+            margin: 0 0 4px;
+            font-size: 12px;
+            color: #DFBE5E;
+            text-transform: uppercase;
+            letter-spacing: 1.5px;
+            font-weight: 700;
+        }
+        .sec-title {
+            margin: 0 0 6px;
+            font-size: 22px;
+            color: #ffffff;
+            font-weight: 700;
+            line-height: 1.3;
+        }
+        .sec-sub {
+            margin: 0 0 16px;
+            font-size: 14px;
+            color: #aaaaaa;
+            line-height: 1.6;
+        }
+        .game-img {
+            width: 100%;
+            height: auto;
+            display: block;
+            border-radius: 10px;
+            border: 1px solid rgba(223, 190, 94, 0.25);
+        }
+        .game-name {
+            margin: 8px 0 1px;
+            font-size: 14px;
+            font-weight: 600;
+            color: #ffffff;
+            line-height: 1.3;
+        }
+        .game-prov {
+            margin: 0;
+            font-size: 11px;
+            color: #888888;
+            text-transform: uppercase;
+            letter-spacing: 0.6px;
+        }
+        .sec-title { font-size: 19px !important; }
+        .game-name { font-size: 12px !important; }
+        .game-prov { font-size: 9px !important; letter-spacing: 0.3px !important; }
+        .btn-wrap { margin: 0 auto; }
+        @media only screen and (max-width: 599px) { .btn-wrap { width: 100% !important; } }
+        .section-card { border-collapse: separate !important; }
+        @media only screen and (max-width: 360px) { .mobile-h1 { font-size: 21px !important; } }
+        .rg-badges img { max-width: 100%; }
+        @media only screen and (max-width: 599px) {
+            .rg-badges td { display: inline-block !important; padding: 3px !important; vertical-align: middle; }
+            .rg-badges img { max-height: 30px !important; }
+        }
+        @media only screen and (max-width: 360px) { .nav-btn { font-size: 9.5px !important; letter-spacing: 0 !important; padding-left: 1px !important; padding-right: 1px !important; } }
+    </style>
+    <!--[if mso]><xml> <w:WordDocument xmlns:w="urn:schemas-microsoft-com:office:word"> <w:DontUseAdvancedTypographyReadingMail/> </w:WordDocument> </xml><![endif]-->
+</head>
+
+<body bgcolor="#0b0b0b">
+    <div style="display:none;max-height:0px;overflow:hidden;opacity:0;font-size:1px;line-height:1px;color:#0b0b0b;">Big Bass Splash, Punk Rocker 2 y más. Tu primer depósito suma un bono del 200% + 50 giros gratis. &nbsp;&zwnj;&nbsp;&zwnj;&nbsp;&zwnj;&nbsp;&zwnj;</div>
+    <!--[if mso]><table role="presentation" width="600" align="center" cellpadding="0" cellspacing="0" border="0"><tr><td><![endif]-->
+    <table role="presentation" cellpadding="0" cellspacing="0" border="0" width="100%" bgcolor="#121212" style="border-collapse: separate !important; max-width: 600px; margin: 20px auto; background-color: #121212; background: linear-gradient(180deg, #1a1a1a 0%, #121212 100%); border-radius: 16px; overflow: hidden; box-shadow: 0 0 25px rgba(223, 190, 94, 0.25); border: 1px solid rgba(223, 190, 94, 0.15);">
+        <tbody>
+            <!-- HEADER: logo + nav -->
+            <tr>
+                <td class="nav-wrap" align="center" style="padding: 18px 20px 12px; background: #0f0f0f; border-bottom: 1px solid rgba(223, 190, 94, 0.2);">
+                    <a href="https://www.betterwin.com/?utm_source=rapidpace&amp;utm_medium=email&amp;utm_campaign=reg-no-deposit-day5-game-spotlight-es" target="_blank" rel="noopener noreferrer"><img src="https://d93o5ciejwy68.cloudfront.net/tig/assets/webp/BW+Golden_White+B.png" alt="BetterWin" width="140" style="width: 140px; max-width: 45%; height: auto; display: block; margin: 0 auto 10px;"></a>
+                    <!-- Icon nav (mirrors the site header): 4 across on desktop, 2x2 on mobile -->
+                    <table role="presentation" cellpadding="0" cellspacing="0" border="0" width="100%">
+                        <tbody>
+                            <tr>
+                                <td class="nav-cell" width="25%" style="padding: 0 4px;"><a class="nav-btn" href="https://www.betterwin.com/casino?utm_source=rapidpace&amp;utm_medium=email&amp;utm_campaign=reg-no-deposit-day5-game-spotlight-es" target="_blank" rel="noopener noreferrer"><img src="https://egxor.stripocdnplugin.email/content/6d3dac714f0b4ccebfa1032816a53a66/lib/pluginId_6d3dac714f0b4ccebfa1032816a53a66_email_d29bfd37-1dd3-4e71-ad79-f23e0c87e710/navcasino.png" alt="" width="16" height="16">Casino</a></td>
+                                <td class="nav-cell" width="25%" style="padding: 0 4px;"><a class="nav-btn" href="https://www.betterwin.com/live-casino?utm_source=rapidpace&amp;utm_medium=email&amp;utm_campaign=reg-no-deposit-day5-game-spotlight-es" target="_blank" rel="noopener noreferrer"><img src="https://egxor.stripocdnplugin.email/content/6d3dac714f0b4ccebfa1032816a53a66/lib/pluginId_6d3dac714f0b4ccebfa1032816a53a66_email_d29bfd37-1dd3-4e71-ad79-f23e0c87e710/navlivecasino.png" alt="" width="16" height="16">Casino en Vivo</a></td>
+                                <td class="nav-cell" width="25%" style="padding: 0 4px;"><a class="nav-btn" href="https://www.betterwin.com/crash-games?utm_source=rapidpace&amp;utm_medium=email&amp;utm_campaign=reg-no-deposit-day5-game-spotlight-es" target="_blank" rel="noopener noreferrer"><img src="https://egxor.stripocdnplugin.email/content/6d3dac714f0b4ccebfa1032816a53a66/lib/pluginId_6d3dac714f0b4ccebfa1032816a53a66_email_d29bfd37-1dd3-4e71-ad79-f23e0c87e710/navcrashgames.png" alt="" width="16" height="16">Juegos Crash</a></td>
+                                <td class="nav-cell" width="25%" style="padding: 0 4px;"><a class="nav-btn" href="https://www.betterwin.com/promotion?utm_source=rapidpace&amp;utm_medium=email&amp;utm_campaign=reg-no-deposit-day5-game-spotlight-es" target="_blank" rel="noopener noreferrer"><img src="https://egxor.stripocdnplugin.email/content/6d3dac714f0b4ccebfa1032816a53a66/lib/pluginId_6d3dac714f0b4ccebfa1032816a53a66_email_d29bfd37-1dd3-4e71-ad79-f23e0c87e710/navpromotions.png" alt="" width="16" height="16">Promociones</a></td>
+                            </tr>
+                        </tbody>
+                    </table>
+                </td>
+            </tr>
+            <tr>
+                <td class="mobile-pad esd-text" style="background: radial-gradient(ellipse at top, rgba(223, 190, 94, 0.22) 0%, rgba(223, 190, 94, 0) 70%); padding: 34px 35px 10px; text-align: center;">
+                    <p style="margin: 0 0 10px; font-size: 12px; color: #DFBE5E; letter-spacing: 3px; text-transform: uppercase; font-weight: 700;">Lo Más Popular en BetterWin</p>
+                    <h1 class="mobile-h1" style="margin: 0 0 18px; font-size: 30px; font-weight: 800; line-height: 1.2; color: #ffffff;">Mira lo que Todos Están<br><span style="color: #DFBE5E; text-shadow: 0 0 12px rgba(223, 190, 94, 0.5);">Jugando</span></h1>
+                    <p style="font-size: 16px; color: #cccccc; line-height: 1.7; margin: 0 0 16px; text-align: center;">Miles de tragamonedas, mesas en vivo y juegos crash te esperan. Estos son los títulos que lideran el lobby de BetterWin ahora mismo.</p>
+                </td>
+            </tr>
+            <tr>
+                <td class="mobile-pad" style="padding: 6px 35px 0;">
+                    <table role="presentation" cellpadding="0" cellspacing="0" border="0" width="100%">
+                        <tbody>
+                            <tr>
+                                <td width="50%" valign="top" style="padding: 0 6px 16px 0;">
+                                    <a href="https://www.betterwin.com/casino/top-games?utm_source=rapidpace&amp;utm_medium=email&amp;utm_campaign=reg-no-deposit-day5-game-spotlight-es" target="_blank" rel="noopener noreferrer" style="text-decoration: none;"><img class="game-img" src="https://cdn.hub88.io/pragmatic/pgp_bigbasssplash.jpg" alt="Big Bass Splash" width="259">
+                                        <p class="game-name">Big Bass Splash</p><p class="game-prov">Pragmatic Play</p></a>
+                                </td>
+                                <td width="50%" valign="top" style="padding: 0 0 16px 6px;">
+                                    <a href="https://www.betterwin.com/casino/top-games?utm_source=rapidpace&amp;utm_medium=email&amp;utm_campaign=reg-no-deposit-day5-game-spotlight-es" target="_blank" rel="noopener noreferrer" style="text-decoration: none;"><img class="game-img" src="https://cdn.hub88.io/nolimitcity/nlc_punkrocker2.jpg" alt="Punk Rocker 2" width="259">
+                                        <p class="game-name">Punk Rocker 2</p><p class="game-prov">Nolimit City</p></a>
+                                </td>
+                            </tr>
+                            <tr>
+                                <td width="50%" valign="top" style="padding: 0 6px 16px 0;">
+                                    <a href="https://www.betterwin.com/casino/top-games?utm_source=rapidpace&amp;utm_medium=email&amp;utm_campaign=reg-no-deposit-day5-game-spotlight-es" target="_blank" rel="noopener noreferrer" style="text-decoration: none;"><img class="game-img" src="https://cdn.hub88.io/nolimitcity/nlc_sanquentin2deathrow.jpg" alt="San Quentin 2: Death Row" width="259">
+                                        <p class="game-name">San Quentin 2: Death Row</p><p class="game-prov">Nolimit City</p></a>
+                                </td>
+                                <td width="50%" valign="top" style="padding: 0 0 16px 6px;">
+                                    <a href="https://www.betterwin.com/casino/top-games?utm_source=rapidpace&amp;utm_medium=email&amp;utm_campaign=reg-no-deposit-day5-game-spotlight-es" target="_blank" rel="noopener noreferrer" style="text-decoration: none;"><img class="game-img" src="https://cdn.hub88.io/pragmatic/eyeofthestorm-thumb.jpg" alt="Eye of the Storm" width="259">
+                                        <p class="game-name">Eye of the Storm</p><p class="game-prov">Pragmatic Play</p></a>
+                                </td>
+                            </tr>
+                        </tbody>
+                    </table>
+                    <p style="margin: 0 0 6px; text-align: right;"><a class="text-link" href="https://www.betterwin.com/casino/top-games?utm_source=rapidpace&amp;utm_medium=email&amp;utm_campaign=reg-no-deposit-day5-game-spotlight-es" target="_blank" rel="noopener noreferrer">Ver todos los juegos top →</a></p>
+                </td>
+            </tr>
+            <tr>
+                <td class="mobile-pad" style="padding: 22px 25px 0;">
+                    <table role="presentation" cellpadding="0" cellspacing="0" border="0" width="100%" style="border-collapse: separate !important; background: linear-gradient(180deg, rgba(223, 190, 94, 0.14) 0%, rgba(223, 190, 94, 0.03) 100%); border: 1px solid rgba(223, 190, 94, 0.3); border-radius: 14px;"><tbody><tr>
+                        <td style="padding: 20px 20px 18px; text-align: left;" class="esd-text">
+                            <p style="margin: 0 0 4px; font-size: 12px; color: #DFBE5E; text-transform: uppercase; letter-spacing: 1.5px; font-weight: 700;">Tu primer depósito</p>
+                            <p style="margin: 0 0 10px; font-size: 20px; color: #ffffff; font-weight: 700; line-height: 1.3;">200% hasta $500 + 50 Giros Gratis</p>
+                            <p style="margin: 0px 0 0px; font-size: 14px; color: #cccccc; line-height: 1.6;">Deposita $10 o más para desbloquear la primera etapa de tu Paquete de Bienvenida del 500% y sigue avanzando: hasta $2,000 + 200 Giros Gratis en tus primeros cuatro depósitos.</p>
+                        </td>
+                    </tr></tbody></table>
+                </td>
+            </tr>
+            <tr>
+                <td class="mobile-pad esd-text" style="padding: 22px 35px 34px; text-align: center;"><table role="presentation" class="btn-wrap" align="center" cellpadding="0" cellspacing="0" border="0" style="margin: 0 auto;"><tr><td align="center" bgcolor="#DFBE5E" style="border-radius: 50px; mso-padding-alt: 15px 40px;"><a data-bp="1" href="https://www.betterwin.com/promotion/500-welcome-bonus-200-free-spins?utm_source=rapidpace&amp;utm_medium=email&amp;utm_campaign=reg-no-deposit-day5-game-spotlight-es" class="verify-btn mobile-btn" target="_blank" rel="noopener noreferrer" style="color: #000000;">Reclamar Mi Bono del 200%</a></td></tr></table>
+                    <!-- CRM note: swap the four game tiles above to match the current newsletter each week. -->
+                </td>
+            </tr>
+            <tr>
+                                <td class="mobile-pad esd-text" style="padding: 0 35px 25px; text-align: center;">
+                    <p style="margin: 0px 0 12px; color: #DFBE5E; font-size: 18px; font-style: italic;"><strong>Juega Más Inteligente. Gana Más Grande.</strong></p>
+                    <p style="margin: 0 0 10px; font-size: 13px; color: #aaaaaa; line-height: 1.6;">Establece límites de depósito o de tiempo, o tómate un descanso cuando quieras desde tu cuenta. <a href="https://www.betterwin.com/responsible-gambling-and-self-exclusion-policy?utm_source=rapidpace&amp;utm_medium=email&amp;utm_campaign=reg-no-deposit-day5-game-spotlight-es" target="_blank" rel="noopener noreferrer" style="color: #DFBE5E; text-decoration: none;">Herramientas de juego responsable →</a></p>
+                    <p style="margin: 0; font-size: 14px; color: #cccccc;">¿Necesitas Ayuda? <a href="mailto:support@betterwin.com" style="color: #DFBE5E; text-decoration: none;">Escríbele a nuestro Soporte 24/7</a></p>
+                                </td>
+                            </tr>
+                            <tr>
+                <td style="background: #0f0f0f; border-top: 1px solid #222; padding: 22px 20px; font-size: 12px; color: #999; text-align: left; line-height: 1.6;" class="esd-text">
+                    <p style="margin: 0 0 8px;"><strong>Términos Clave:</strong></p>
+                    <ul style="margin: 0; padding-left: 18px;">
+                        <li style="margin: 4px 0;">La disponibilidad de los juegos varía según la región; algunos títulos podrían no estar disponibles en tu país.</li>
+                        <li style="margin: 4px 0;">Paquete de Bienvenida: solo para quienes depositan por primera vez. Depósito mínimo que califica: $10 por etapa. 1er depósito: 200% hasta $500 / USDT + 50 Giros Gratis; hasta $2,000 + 200 Giros Gratis entre los primeros 4 depósitos.</li>
+                        <li style="margin: 4px 0;">Apuesta de 35x en los bonos del 1er y 2º depósito, y de 30x en los del 3er y 4º. Las ganancias de los Giros Gratis tienen una apuesta de 30x y están limitadas a $50 / USDT por lote de 50 giros. Apuesta máxima de $5 / 5 USDT mientras haya un bono activo. Solo tragamonedas.</li>
+                        <li style="margin: 4px 0;">Los depósitos deben apostarse al menos 1x antes de retirar (3x para países de LATAM). Los fondos de bono y los Giros Gratis son válidos por 30 días desde su acreditación. Aplican los términos completos de la promoción y los <a href="https://www.betterwin.com/terms-and-conditions?utm_source=rapidpace&amp;utm_medium=email&amp;utm_campaign=reg-no-deposit-day5-game-spotlight-es" target="_blank" rel="noopener noreferrer" style="color: #dfbe5e; text-decoration: none;">Términos Generales</a>.</li>
+                    </ul>
+                </td>
+            </tr>
+            <tr>
+                <td style="background: #0f0f0f; text-align: center; padding: 15px 20px 25px; font-size: 12px; color: #888; border-top: 1px solid #222;" class="esd-text">
+                    <p style="margin: 0 0 8px; font-size: 11px; color: #DFBE5E; text-transform: uppercase; letter-spacing: 1.5px; font-weight: 700;">Síguenos</p>
+                    <table role="presentation" cellpadding="0" cellspacing="0" border="0" style="margin: 0 auto 14px;"><tbody><tr><td style="padding: 0 6px;"><a href="https://x.com/betterwin_com" target="_blank" rel="noopener noreferrer" style="text-decoration: none;"><img src="https://egxor.stripocdnplugin.email/content/6d3dac714f0b4ccebfa1032816a53a66/lib/pluginId_6d3dac714f0b4ccebfa1032816a53a66_email_d29bfd37-1dd3-4e71-ad79-f23e0c87e710/socialx.png" alt="X" width="32" height="32" style="display: block; width: 32px; height: 32px; border: 0; color: #DFBE5E; font-size: 11px;"></a></td><td style="padding: 0 6px;"><a href="https://www.instagram.com/betterwin.official/" target="_blank" rel="noopener noreferrer" style="text-decoration: none;"><img src="https://egxor.stripocdnplugin.email/content/6d3dac714f0b4ccebfa1032816a53a66/lib/pluginId_6d3dac714f0b4ccebfa1032816a53a66_email_d29bfd37-1dd3-4e71-ad79-f23e0c87e710/socialinstagram.png" alt="Instagram" width="32" height="32" style="display: block; width: 32px; height: 32px; border: 0; color: #DFBE5E; font-size: 11px;"></a></td><td style="padding: 0 6px;"><a href="https://www.facebook.com/betterwin.official/" target="_blank" rel="noopener noreferrer" style="text-decoration: none;"><img src="https://egxor.stripocdnplugin.email/content/6d3dac714f0b4ccebfa1032816a53a66/lib/pluginId_6d3dac714f0b4ccebfa1032816a53a66_email_d29bfd37-1dd3-4e71-ad79-f23e0c87e710/socialfacebook.png" alt="Facebook" width="32" height="32" style="display: block; width: 32px; height: 32px; border: 0; color: #DFBE5E; font-size: 11px;"></a></td></tr></tbody></table>
+                    <div style="margin: 0 0 8px;" class="esd-text"><a href="https://www.betterwin.com/terms-and-conditions?utm_source=rapidpace&amp;utm_medium=email&amp;utm_campaign=reg-no-deposit-day5-game-spotlight-es" target="_blank" rel="noopener noreferrer" style="color: #dfbe5e; text-decoration: none;">Términos Generales</a> | <a href="https://www.betterwin.com/responsible-gambling-and-self-exclusion-policy?utm_source=rapidpace&amp;utm_medium=email&amp;utm_campaign=reg-no-deposit-day5-game-spotlight-es" target="_blank" rel="noopener noreferrer" style="color: #dfbe5e; text-decoration: none;">Juego Responsable</a> | <a href="https://www.betterwin.com/privacy-policy?utm_source=rapidpace&amp;utm_medium=email&amp;utm_campaign=reg-no-deposit-day5-game-spotlight-es" target="_blank" rel="noopener noreferrer" style="color: #dfbe5e; text-decoration: none;">Política de Privacidad</a> | <a href="https://www.betterwin.com/aml-kyc-policy?utm_source=rapidpace&amp;utm_medium=email&amp;utm_campaign=reg-no-deposit-day5-game-spotlight-es" target="_blank" rel="noopener noreferrer" style="color: #dfbe5e; text-decoration: none;">AML y KYC</a> | <a href="https://www.betterwin.com/support?utm_source=rapidpace&amp;utm_medium=email&amp;utm_campaign=reg-no-deposit-day5-game-spotlight-es" target="_blank" rel="noopener noreferrer" style="color: #dfbe5e; text-decoration: none;">Soporte</a> | <a href="mailto:support@betterwin.com?subject=Unsubscribe&amp;body=Please%20unsubscribe%20me%2C%20I%20no%20longer%20want%20to%20receive%20emails%20from%20you%2C%20thanks." style="color: #dfbe5e; text-decoration: none;">Cancelar suscripción</a></div>
+                    <hr style="border: none; border-top: 1px solid #444; margin: 10px auto; max-width: 560px; height: 1px;">
+                    <p style="text-align: justify; margin: 0 0 10px; font-size: 12px; line-height: 1.5;">Todos los derechos reservados. <a href="https://www.betterwin.com?utm_source=rapidpace&amp;utm_medium=email&amp;utm_campaign=reg-no-deposit-day5-game-spotlight-es" target="_blank" rel="noopener noreferrer" style="color: #dfbe5e; text-decoration: none;">www.betterwin.com</a> está licenciado y regulado por el Gobierno de la Isla Autónoma de Anjouan, Unión de Comoras, y opera bajo la Licencia No. ALSI-152312008-FI3, registrada a nombre de Two Six Five Enterprises Limitada, con domicilio registrado en Puntarenas - Avenida Pastor Díaz, Provincia de Puntarenas, Jacó 61101, Costa Rica, con número de registro de compañía 3-102-886850. <a href="https://www.betterwin.com?utm_source=rapidpace&amp;utm_medium=email&amp;utm_campaign=reg-no-deposit-day5-game-spotlight-es" target="_blank" rel="noopener noreferrer" style="color: #dfbe5e; text-decoration: none;">www.betterwin.com</a> es operado por Paillan 265 Enterprises Limited, con domicilio registrado en Veroias, 11 2do piso, Oficina 203, Strovolos, 2023, Nicosia, Chipre, Registro No. HE455738.</p>
+                    <hr style="border: none; border-top: 1px solid #444; margin: 10px auto 10px; max-width: 560px; height: 1px;">
+                    <table class="rg-badges" role="presentation" cellpadding="0" cellspacing="0" border="0" style="margin: 8px auto;">
+                        <tbody>
+                            <tr>
+                                <td style="padding: 0 4px;"><a href="https://www.betterwin.com/responsible-gambling-and-self-exclusion-policy?utm_source=rapidpace&amp;utm_medium=email&amp;utm_campaign=reg-no-deposit-day5-game-spotlight-es" target="_blank" rel="noopener noreferrer"><img src="https://betterwin.s3.dualstack.eu-south-1.amazonaws.com/18%2B%20in%20Circle.png" alt="Solo +18" style="max-height: 40px; height: auto; width: auto; background: #ffffff; padding: 4px; border-radius: 4px; display: block;"></a></td>
+                                <td style="padding: 0 4px;"><a href="https://www.gamcare.org.uk/" target="_blank" rel="noopener noreferrer"><img src="https://betterwin.s3.dualstack.eu-south-1.amazonaws.com/gameCare.png" alt="GamCare" style="max-height: 40px; height: auto; width: auto; background: #ffffff; padding: 4px; border-radius: 4px; display: block;"></a></td>
+                                <td style="padding: 0 4px;"><a href="https://www.gambleaware.org/" target="_blank" rel="noopener noreferrer"><img src="https://betterwin.s3.dualstack.eu-south-1.amazonaws.com/gambleAware.png" alt="GambleAware" style="max-height: 40px; height: auto; width: auto; background: #ffffff; padding: 4px; border-radius: 4px; display: block;"></a></td>
+                                <td style="padding: 0 4px;"><a href="https://verification.anjouangamingboard.org/validate?domain=www.betterwin.com&seal_id=76cb0a049a1a309a4fba8ba2b8f9bcdb233f61d195ca2da7cb174df7d2a33ff877d4a5833b7052ff7cd32aab6a946971&stamp=a8f3ed157052be370bc39aa3645baf07" target="_blank" rel="noopener noreferrer"><img src="https://betterwin.s3.dualstack.eu-south-1.amazonaws.com/basiclarge.png" alt="Sello de la Anjouan Gaming Board" style="max-height: 40px; height: auto; width: auto; display: block;"></a></td>
+                            </tr>
+                        </tbody>
+                    </table>
+                    <p style="margin: 0; font-size: 12px;">Recibes este correo porque te registraste en BetterWin.</p>
+                    <p style="margin: 0; font-size: 12px;">© 2026 Betterwin. Todos los derechos reservados.</p>
+                </td>
+            </tr>
+        </tbody>
+    </table>
+    <!--[if mso]></td></tr></table><![endif]-->
+    <div class="reserved-section-urm" style="max-width:600px;margin:auto;">
+        <div id="footer-id-reserved" class="esd-text"><span class="replace-footer-class"><b style="display:none;"></b></span></div>
+    </div>
+    <div class="reserved-section-urm" style="max-width:600px;margin:auto;"></div>
+    <div class="reserved-section-urm" style="max-width:600px;margin:auto;"></div><span class="replace-subscription-class esd-text"></span><span class="replace-subscription-class esd-text"></span><span class="replace-subscription-class esd-text"></span>
+</body>
+
+</html>
