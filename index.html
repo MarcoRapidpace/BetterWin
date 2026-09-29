@@ -245,6 +245,25 @@
             .feat-chips, .feat-btns { justify-content: center; }
             .feat-title { font-size: 25px; }
         }
+        /* ===== Strategy sections ===== */
+        .strategy { margin: 34px 0 0; }
+        .strategy .lead { font-size: 13px; color: #bbb; line-height: 1.7; margin: 0 0 14px; max-width: 900px; }
+        .strat-table { width: 100%; border-collapse: separate; border-spacing: 0; border: 1px solid rgba(223,190,94,0.25); border-radius: 12px; overflow: hidden; font-size: 13px; }
+        .strat-table th { text-align: left; background: rgba(223,190,94,0.10); color: #DFBE5E; font-size: 11px; text-transform: uppercase; letter-spacing: 1px; padding: 10px 12px; }
+        .strat-table td { padding: 11px 12px; border-top: 1px solid rgba(223,190,94,0.12); color: #ddd; vertical-align: top; line-height: 1.55; }
+        .strat-table td:first-child { color: #fff; font-weight: 700; white-space: nowrap; }
+        .strat-table .num { color: #DFBE5E; font-weight: 700; white-space: nowrap; }
+        .strat-note { font-size: 12px; color: #999; margin: 10px 0 0; line-height: 1.6; }
+        .how-grid { display: grid; grid-template-columns: repeat(3, minmax(0,1fr)); gap: 12px; margin-top: 14px; }
+        .how { background: rgba(223,190,94,0.05); border: 1px solid rgba(223,190,94,0.2); border-radius: 12px; padding: 14px 16px; }
+        .how b { display: block; color: #DFBE5E; font-size: 13px; margin-bottom: 6px; }
+        .how p { margin: 0; font-size: 12.5px; color: #ccc; line-height: 1.6; }
+        .how code { font-size: 11px; color: #fff; background: rgba(255,255,255,0.06); padding: 1px 5px; border-radius: 4px; word-break: break-all; }
+        @media (max-width: 760px) {
+            .how-grid { grid-template-columns: 1fr; }
+            .table-scroll { overflow-x: auto; -webkit-overflow-scrolling: touch; }
+            .strat-table { min-width: 620px; }
+        }
     </style>
 </head>
 <body>
@@ -312,14 +331,34 @@
                     </div>
                     <div class="branch">
                         <span class="branch-tag yes">Yes</span>
-                        <div class="wire"><span>Wait a few hours</span></div>
+                        <div class="wire"><span>Immediately · optional</span></div>
+                        <a class="node email optional" href="first-deposit-confirmed.html"><span class="when opt">Email 4a · Instant</span><span class="what">Your 200% Bonus Is Live</span><span class="hook">Bonus rules + limits · only if the platform can trigger it</span></a>
+                        <div class="wire"><span>Wait 24 hours</span></div>
                         <div class="node check">Exactly 1 deposit?</div>
                         <div class="wire"><span>Yes</span></div>
-                        <a class="node email" href="deposit-1-unlock-2nd.html"><span class="when">Email 4 · After deposit #1</span><span class="what">Unlock Your 2nd Deposit</span><span class="hook">Progress 1/4 · pushes 150% tier</span></a>
+                        <a class="node email" href="deposit-1-unlock-2nd.html"><span class="when">Email 4 · 24h after deposit #1</span><span class="what">Unlock Your 2nd Deposit</span><span class="hook">Progress 1/4 · pushes 150% tier</span></a>
+                        <div class="wire"><span>Wait 3 days</span></div>
+                        <div class="node check">Still 1 deposit?</div>
+                        <div class="wire"><span>Yes</span></div>
+                        <a class="node email" href="deposit-1-reminder-day4.html"><span class="when">Email 4b · Day 4</span><span class="what">2nd Deposit Reminder</span><span class="hook">150% + 50 spins · trending games</span></a>
                         <div class="wire"></div>
                         <div class="node end">End · deposit #2 has its own flow ↓</div>
+                        <div class="jump">★ First deposit of $500+? The player also enters the Early VIP flow ↓</div>
                     </div>
                 </div>
+            </div>
+        </div>
+
+        <div class="map-block">
+            <div class="map-label">Flow 5 · Early VIP Recognition</div>
+            <div class="flow">
+                <div class="node start"><span class="what">High-value start</span><span class="hook">First deposit of $500+, or $1,000+ deposited in the first 7 days</span></div>
+                <div class="wire"><span>Immediately</span></div>
+                <a class="node email" href="vip-early-welcome.html"><span class="when">VIP Email · Day 0</span><span class="what">Welcome to BetterWin VIP</span><span class="hook">8-rank ladder · VIP perks · VIP contact</span></a>
+                <div class="wire"><span>Same day</span></div>
+                <div class="node check">Flag to the VIP team for a personal follow-up</div>
+                <div class="wire"></div>
+                <div class="node end">Moves into the High Value segment</div>
             </div>
         </div>
 
@@ -349,8 +388,10 @@
         </div>
 
         <div class="map-block">
-            <div class="map-label">Lifecycle Triggers · win-back &amp; referral</div>
+            <div class="map-label">Lifecycle Triggers · engagement, win-back &amp; referral</div>
             <div class="triggers">
+                <div class="trigger"><div class="node check">First withdrawal requested</div><div class="wire"></div><a class="node email" href="first-withdrawal.html"><span class="when">Engagement</span><span class="what">First Withdrawal</span><span class="hook">Processing times · limits · cashback</span></a></div>
+                <div class="trigger"><div class="node check">Active player, 3 days quiet</div><div class="wire"></div><a class="node email" href="active-player-quiet-3d.html"><span class="when">Early warning</span><span class="what">What You've Missed</span><span class="hook">New games · cashback · before the 7-day win-back</span></a></div>
                 <div class="trigger"><div class="node check">Inactive 7+ days</div><div class="wire"></div><a class="node email" href="free-spin-drop.html"><span class="when">Win-back</span><span class="what">Free Spin Drop</span><span class="hook">20 spins · 1x on winnings</span></a></div>
                 <div class="trigger"><div class="node check">Completed all 4 deposits, then inactive</div><div class="wire"></div><a class="node email" href="deposited-4x-inactive.html"><span class="when">Win-back</span><span class="what">Deposited 4x, Inactive</span><span class="hook">Cashback + VIP reminder</span></a></div>
                 <div class="trigger"><div class="node check">Active player (played in last 30 days)</div><div class="wire"></div><a class="node email" href="refer-a-friend.html"><span class="when">Anytime</span><span class="what">Refer a Friend</span><span class="hook">$20 credit + 50 spins for the friend</span></a></div>
@@ -384,6 +425,8 @@
         <div class="section-title">💰 Deposit-Tier Progression</div>
         <ul class="template-list">
             <li class="template-item"><a href="deposit-1-unlock-2nd.html" class="template-link">4. 1st Deposit Made → Unlock 2nd<div class="template-desc">Sent after the 1st deposit clears. Shows package progress and pushes toward deposit #2.</div></a></li>
+            <li class="template-item"><a href="first-deposit-confirmed.html" class="template-link">4a. First Deposit Confirmed (instant, optional)<div class="template-desc">"Your 200% bonus is live": how the bonus works and where to set limits. Only if Rapidpace can trigger on the first deposit.</div></a></li>
+            <li class="template-item"><a href="deposit-1-reminder-day4.html" class="template-link">4b. 2nd Deposit Reminder — Day 4<div class="template-desc">Sent 3 days after Email 4 if the player still has exactly one deposit. 150% + 50 spins with trending games.</div></a></li>
             <li class="template-item"><a href="deposit-2-unlock-3rd.html" class="template-link">5. 2nd Deposit Made → Unlock 3rd<div class="template-desc">Sent after the 2nd deposit clears. Two milestones down, two to go.</div></a></li>
             <li class="template-item"><a href="deposit-3-unlock-4th.html" class="template-link">6. 3rd Deposit Made → Unlock 4th (Final)<div class="template-desc">Sent after the 3rd deposit clears. Last tier of the welcome package is on the table.</div></a></li>
             <li class="template-item"><a href="deposit-4-complete.html" class="template-link">7. 4th Deposit Completed → VIP Path + Cashback<div class="template-desc">Sent when the full 500% package is claimed. Celebrates the finish and hands the player off to weekly cashback and the VIP ladder.</div></a></li>
@@ -410,6 +453,13 @@
             <li class="template-item"><a href="newsletter-weekly.html" class="template-link">15. The BetterWin Weekly (Newsletter)<div class="template-desc">Weekly roundup for all opted-in players: top games, jackpot corner, new releases, big wins and the promo calendar. Swap games and wins each issue.</div></a></li>
         </ul>
 
+        <div class="section-title">👑 VIP &amp; Lifecycle</div>
+        <ul class="template-list">
+            <li class="template-item"><a href="vip-early-welcome.html" class="template-link">16. VIP Welcome (Early VIP Recognition)<div class="template-desc">For a first deposit of $500+ or $1,000+ in the first 7 days. Introduces the 8-rank ladder and VIP perks, and flags the player to the VIP team.</div></a></li>
+            <li class="template-item"><a href="first-withdrawal.html" class="template-link">17. First Withdrawal<div class="template-desc">Confirms the withdrawal, sets expectations (2 banking days, limits, ID check) and reminds them about weekly cashback.</div></a></li>
+            <li class="template-item"><a href="active-player-quiet-3d.html" class="template-link">18. Active Player — 3 Days Quiet<div class="template-desc">Early warning for regular players who go quiet, before the 7-day Free Spin Drop. New games and cashback, no bonus.</div></a></li>
+        </ul>
+
         <div class="section-title">⚠️ Win-Back &amp; Reactivation</div>
         <ul class="template-list">
             <li class="template-item"><a href="deposited-4x-inactive.html" class="template-link">13. Deposited 4 Times, Inactive<div class="template-desc">Sent to players who finished the full welcome package and have since gone quiet.</div></a></li>
@@ -418,6 +468,44 @@
 
         </div>
         </div>
+
+
+        <section class="strategy" id="segments">
+            <div class="section-title">👥 Player Value Segments</div>
+            <p class="lead">Instead of sending every offer to every depositor, players are grouped by what they deposited in the last 30 days. Each group gets offers that fit, and a cap on how many promo emails they receive. Flow emails (onboarding, deposit ladder, lifecycle triggers) are sent on top and don't count towards the cap.</p>
+            <div class="table-scroll"><table class="strat-table">
+                <thead><tr><th>Segment</th><th>Who</th><th>What they get</th><th>Promo emails / week</th></tr></thead>
+                <tbody>
+                    <tr><td>🆕 New</td><td>Registered or first deposit in the last 7 days</td><td>Onboarding and deposit-ladder flows only. No weekly promos yet, so the welcome package gets full attention.</td><td class="num">0</td></tr>
+                    <tr><td>🥉 Low value</td><td>Under $100 deposited in the last 30 days</td><td>Newsletter, Monday cashback, Game of the Week and free-spin offers. No large deposit matches.</td><td class="num">2</td></tr>
+                    <tr><td>🥈 Mid value</td><td>$100 – $999 in the last 30 days</td><td>Full weekly calendar: cashback, Saturday reload, Sunday live dealer, Game of the Week, newsletter.</td><td class="num">3</td></tr>
+                    <tr><td>🥇 High value</td><td>$1,000+ in the last 30 days (roughly Bronze rank and up)</td><td>VIP Reload Tuesday and VIP messages, fewer mass promos, personal follow-up from the VIP team.</td><td class="num">2 + personal</td></tr>
+                    <tr><td>💤 Dormant</td><td>No deposit or login in 30+ days</td><td>Win-back emails only (Free Spin Drop, Deposited 4x Inactive).</td><td class="num">1</td></tr>
+                </tbody>
+            </table></div>
+            <p class="strat-note">Thresholds are a starting point: review them after 4 weeks of data. More segments can be layered on top, for example slots vs live casino players, bonus-sensitive vs no-bonus players, or LATAM (3x deposit turnover). Offer rule of thumb: the smallest offer that works, and recognition before bonuses for high-value players.</p>
+        </section>
+
+        <section class="strategy" id="retention">
+            <div class="section-title">📊 Measuring Retention</div>
+            <p class="lead">These are the numbers that show whether the CRM is working. Measure a 4-week baseline first, then set targets and review them monthly, per segment.</p>
+            <div class="table-scroll"><table class="strat-table">
+                <thead><tr><th>Metric</th><th>Definition</th><th>What it tells us</th></tr></thead>
+                <tbody>
+                    <tr><td>Registration → first deposit</td><td>% of new registrations that make a first deposit within 7 days</td><td>Is the Day 0–7 onboarding flow working?</td></tr>
+                    <tr><td>First → second deposit</td><td>% of first-time depositors who deposit again within 7 days</td><td>Is the deposit ladder working?</td></tr>
+                    <tr><td>Week-2 retention</td><td>% of first-time depositors who place a real-money bet on days 7–13 after their first deposit</td><td>The "7-day retention" number</td></tr>
+                    <tr><td>Month-2 retention</td><td>% of first-time depositors who place a real-money bet on days 30–59 after their first deposit</td><td>The "30-day retention" number</td></tr>
+                    <tr><td>Bonus cost per retained player</td><td>Bonus + cashback cost ÷ players still active in month 2</td><td>Are bonuses buying retention, or just cost?</td></tr>
+                    <tr><td>Email performance</td><td>Click rate, deposits within 48h of a click, and unsubscribes, per email</td><td>Which emails earn their place in the flow</td></tr>
+                </tbody>
+            </table></div>
+            <div class="how-grid">
+                <div class="how"><b>Control group</b><p>Hold back 10% of eligible players from each flow. Comparing their retention with players who got the emails shows the real lift the CRM creates.</p></div>
+                <div class="how"><b>Tracking tags</b><p>Every link in every email carries <code>utm_source=rapidpace</code>, <code>utm_medium=email</code> and <code>utm_campaign=&lt;email name&gt;</code>, so site analytics shows which email drove each visit and deposit.</p></div>
+                <div class="how"><b>Clicks over opens</b><p>Apple Mail pre-loads emails, which inflates open rates. Judge emails on clicks and deposits after a click instead.</p></div>
+            </div>
+        </section>
 
         <div class="footer">
             © 2026 BetterWin.com • All rights reserved.
