@@ -213,6 +213,38 @@
             .ladder .arrow { transform: rotate(90deg); flex-basis: 100%; text-align: center; }
             .ladder .node { flex-basis: 100%; }
         }
+        /* ===== Featured newsletter showcase ===== */
+        .featured { position: relative; margin: 6px 0 34px; padding: 26px; border-radius: 18px;
+            background: radial-gradient(ellipse at 20% 0%, rgba(223,190,94,0.16) 0%, rgba(223,190,94,0) 60%), linear-gradient(180deg, #1a1a1a 0%, #121212 100%);
+            border: 1px solid rgba(223,190,94,0.35); box-shadow: 0 0 30px rgba(223,190,94,0.12);
+            display: grid; grid-template-columns: auto minmax(0, 1fr); gap: 34px; align-items: center; }
+        .feat-phone { position: relative; width: 300px; height: 580px; border-radius: 38px; padding: 12px; background: #050505;
+            border: 1px solid rgba(223,190,94,0.45); box-shadow: 0 18px 50px rgba(0,0,0,0.6), 0 0 0 5px #1b1b1b, 0 0 30px rgba(223,190,94,0.18); }
+        .feat-phone::before { content: ""; position: absolute; top: 18px; left: 50%; transform: translateX(-50%); width: 84px; height: 18px; border-radius: 12px; background: #050505; z-index: 3; }
+        .feat-screen { position: relative; width: 276px; height: 556px; border-radius: 28px; overflow: hidden; background: #0f0f0f; }
+        .feat-screen iframe { position: absolute; top: 34px; left: 0; width: 375px; height: 710px; border: 0; transform: scale(0.736); transform-origin: top left; background: #0b0b0b; }
+        .feat-hint { position: absolute; bottom: 10px; left: 50%; transform: translateX(-50%); font-size: 10px; font-weight: 600; letter-spacing: .5px; color: #0b0b0b;
+            background: rgba(223,190,94,0.92); padding: 4px 10px; border-radius: 20px; z-index: 4; pointer-events: none; transition: opacity .3s; }
+        .feat-phone:hover .feat-hint { opacity: 0; }
+        .feat-kicker { font-size: 11px; font-weight: 800; letter-spacing: 3px; text-transform: uppercase; color: #DFBE5E; margin: 0 0 8px; }
+        .feat-title { font-size: 30px; font-weight: 800; line-height: 1.15; margin: 0 0 12px; }
+        .feat-title span { color: #DFBE5E; text-shadow: 0 0 12px rgba(223,190,94,0.45); }
+        .feat-text { font-size: 14px; color: #cfcfcf; line-height: 1.7; margin: 0 0 16px; max-width: 460px; }
+        .feat-chips { display: flex; flex-wrap: wrap; gap: 8px; margin: 0 0 18px; }
+        .feat-chips span { font-size: 12px; font-weight: 600; color: #fff; background: rgba(223,190,94,0.08); border: 1px solid rgba(223,190,94,0.35); border-radius: 20px; padding: 5px 12px; }
+        .feat-meta { font-size: 12px; color: #9a9a9a; margin: 0 0 20px; line-height: 1.6; }
+        .feat-meta strong { color: #DFBE5E; font-weight: 600; }
+        .feat-btns { display: flex; flex-wrap: wrap; gap: 10px; }
+        .feat-btn { display: inline-block; padding: 12px 26px; border-radius: 50px; font-weight: 700; font-size: 14px; text-decoration: none; }
+        .feat-btn.primary { color: #000; background: linear-gradient(180deg, #EED67E 0%, #CFA840 100%); box-shadow: 0 0 22px rgba(223,190,94,0.45); }
+        .feat-btn.ghost { color: #DFBE5E; border: 1px solid rgba(223,190,94,0.55); }
+        .feat-btn:hover { transform: translateY(-1px); }
+        @media (max-width: 760px) {
+            .featured { grid-template-columns: 1fr; justify-items: center; text-align: center; padding: 22px 16px; gap: 22px; }
+            .feat-text { margin-left: auto; margin-right: auto; }
+            .feat-chips, .feat-btns { justify-content: center; }
+            .feat-title { font-size: 25px; }
+        }
     </style>
 </head>
 <body>
@@ -222,9 +254,28 @@
         <div class="subtitle">Email Campaign Previews &amp; Player Journey</div>
 
 
+
+        <section class="featured" aria-label="Featured email: The BetterWin Weekly">
+            <div class="feat-phone">
+                <div class="feat-screen"><iframe src="newsletter-weekly.html" title="The BetterWin Weekly newsletter preview" loading="lazy"></iframe></div>
+                <span class="feat-hint">Scroll to explore ↕</span>
+            </div>
+            <div class="feat-copy">
+                <p class="feat-kicker">★ Featured email</p>
+                <h2 class="feat-title">The BetterWin <span>Weekly</span></h2>
+                <p class="feat-text">One email a week that keeps every player close to the action: the slots everyone's spinning, jackpots worth chasing, fresh releases and every promotion on the calendar, all in one place.</p>
+                <div class="feat-chips"><span>🔥 Top games</span><span>💎 Jackpot corner</span><span>✨ New releases</span><span>📅 Promo calendar</span></div>
+                <p class="feat-meta">Sent weekly to all opted-in players · <strong>Swap the games each issue</strong> · Also the hand-off point after the Day 7 onboarding reminder</p>
+                <div class="feat-btns">
+                    <a class="feat-btn primary" href="newsletter-weekly.html">Open the newsletter →</a>
+                    <a class="feat-btn ghost" href="#journey">See where it fits in the flow</a>
+                </div>
+            </div>
+        </section>
+
         <div class="two-col">
         <div class="col-map">
-        <div class="section-title">🗺️ Player Journey Map</div>
+        <div class="section-title" id="journey">🗺️ Player Journey Map</div>
         <p class="map-intro">What each player receives and when. Tap any gold card to open that email.</p>
         <div class="legend"><span><i style="background:rgba(223,190,94,.25);border:1px solid #DFBE5E"></i>Email</span><span><i style="border:1px dashed #b9a6ff"></i>CRM check</span><span><i style="border:1px dashed #ff8a8a"></i>Flow ends</span></div>
 
