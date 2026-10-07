@@ -1,4 +1,4 @@
-Welcome to BetterWin US
+Welcome, {{name}}
 
 Great to have you here! Your welcome coins are on us: 50,000 Gold Coins + 1 free Sweeps Coin, and they're already in your account.
 
