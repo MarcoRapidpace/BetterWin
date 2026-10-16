@@ -49,9 +49,11 @@ default variation and the ES file into the Spanish one.
 | A5 | BitcoinCasinoKings Exclusive Welcome (aff ID 12) | 024d1a36 | aff-bitcoincasinokings-welcome.html | — | |
 | A6 | GSH Media Exclusive Welcome (aff ID 13) | 97720504 | aff-gsh-welcome.html | — | |
 
-**Not yet matched to a template:** `first-deposit-confirmed.html` (+ ES) and
-`reg-no-deposit-day3.html` (+ ES). The .com template list runs to 7 pages and only
-the first four were captured, so these are probably on a later page.
+**Retired files.** `first-deposit-confirmed.html` (+ ES) and `reg-no-deposit-day3.html`
+(+ ES) have no live template. Pages 5–7 of the .com template list hold old templates that
+are no longer in use, so anything in the repo that is not in the table above is superseded
+and should not be pasted into the CRM. `reg-no-deposit-day3.html` is the earlier version of
+2b (How to Deposit, Day 3); use `reg-no-deposit-day3-how-to-deposit.html` instead.
 
 ---
 
