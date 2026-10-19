@@ -21,7 +21,7 @@ default variation and the ES file into the Spanish one.
 | 2c | Game Spotlight, Day 5 | 09f3871a | reg-no-deposit-day5-game-spotlight.html | reg-no-deposit-day5-game-spotlight-es.html | **yes** |
 | 3 | Last Reminder, Day 7 | 6a35879b | reg-no-deposit-day7-last-reminder.html | reg-no-deposit-day7-last-reminder-es.html | |
 | 4 | 1st Deposit Made → Unlock 2nd | f0077e76 | deposit-1-unlock-2nd.html | deposit-1-unlock-2nd-es.html | |
-| 4a | 1h After First Deposit | a749adcf | deposit-abandoned-1h.html | — | |
+| 4a | 1h After First Deposit | a749adcf | first-deposit-confirmed.html | first-deposit-confirmed-es.html | |
 | 4b | 2nd Deposit Reminder — Day 4 | fdeaab79 | deposit-1-reminder-day4.html | deposit-1-reminder-day4-es.html | **yes** |
 | 5 | 2nd Deposit Made → Unlock 3rd | b77b9df2 | deposit-2-unlock-3rd.html | deposit-2-unlock-3rd-es.html | |
 | 6 | 3rd Deposit Made → Unlock 4th (Final) | 959114e4 | deposit-3-unlock-4th.html | deposit-3-unlock-4th-es.html | |
@@ -49,7 +49,7 @@ default variation and the ES file into the Spanish one.
 | A5 | BitcoinCasinoKings Exclusive Welcome (aff ID 12) | 024d1a36 | aff-bitcoincasinokings-welcome.html | — | |
 | A6 | GSH Media Exclusive Welcome (aff ID 13) | 97720504 | aff-gsh-welcome.html | — | |
 
-**Retired files.** `first-deposit-confirmed.html` (+ ES) and `reg-no-deposit-day3.html`
+**Retired files.** `deposit-abandoned-1h.html` (Finish Your First Deposit) and `reg-no-deposit-day3.html`
 (+ ES) have no live template. Pages 5–7 of the .com template list hold old templates that
 are no longer in use, so anything in the repo that is not in the table above is superseded
 and should not be pasted into the CRM. `reg-no-deposit-day3.html` is the earlier version of
