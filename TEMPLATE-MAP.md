@@ -77,6 +77,7 @@ and should not be pasted into the CRM. `reg-no-deposit-day3.html` is the earlier
 | 14 | Daily Coins Still Here — 30 days lapsed | 91dcee83 | us-lapsed-30d.html | **yes** |
 | 15 | Keep Your Account Active — 11 months | a15f3310 | us-dormancy-notice.html | |
 | 16 | State Eligibility Update | caae3914 | us-state-eligibility.html | |
+| 17 | Your Next Gold Coin Package — 48h after 1st purchase | (new, not yet in Rapidpace) | us-second-purchase-48h.html | |
 
 `us-welcome-sendgrid.html` is the platform's own welcome email, sent by SendGrid, not a
 Rapidpace template. Files ending `-pilot.html` are preview copies, not pasted into the CRM.
